@@ -21,5 +21,11 @@ if (IPL_elem)
    // IPL_elem_attr['background-color'] = 'yellow'
    IPL_elem.setAttribute('style', "background-color:yellow")
 
-if (curr_matchday_elem)
-   curr_matchday_elem.setAttribute('style', "background-color:yellow")
+if (curr_matchday_elem) {
+   var matchday_attr = curr_matchday_elem.getAttribute('style')
+   if (!matchday_attr)
+      matchday_attr = ""
+   matchday_attr += "; background-color: yellow;"
+   curr_matchday_elem.setAttribute('style', matchday_attr)
+}
+
