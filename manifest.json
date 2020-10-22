@@ -1,0 +1,26 @@
+{
+   "name": "Yonx's Extension",
+   "version": "2",
+   "manifest_version": 2,
+   "description": "Changes look of ICC/IPL matches",
+   "permissions": ["activeTab", "storage", "declarativeContent"],
+   "background": {
+      "persistent": false,
+      "scripts": ["background_script.js"]
+    },
+    "page_action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+         "16": "images/cric16.png",
+         "32": "images/cric32.png",
+         "48": "images/cric48.png",
+         "128": "images/cric128.png"
+      }
+    },
+    "icons": {
+      "16": "images/cric16.png",
+      "32": "images/cric32.png",
+      "48": "images/cric48.png",
+      "128": "images/cric128.png"
+    }
+}
